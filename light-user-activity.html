@@ -1,298 +1,240 @@
+
 <!DOCTYPE html>
-<!--
-    Name: Youplay - Game Template based on Bootstrap
-    Version: 3.3.2
-    Author: nK
-    Website: https://nkdev.info/
-    Purchase: https://1.envato.market/youplayhtmlinfo
-    Support: https://nk.ticksy.com/
-    License: You must have a valid license purchased only from ThemeForest (the above link) in order to legally use the theme for your project.
-    Copyright 2020.
--->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Youplay | User Activity</title>
-        <meta name="description" content="Youplay - Gaming HTML Template based on Bootstrap">
-        <meta name="keywords" content="gaming, game, community, template, html, bootstrap, webpack">
-        <meta name="author" content="nK">
-        <link rel="icon" type="image/png" href="assets/images/dark/icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- START: Styles -->
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
-        <!-- Flickity -->
-        <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css" />
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="assets/vendor/magnific-popup/dist/magnific-popup.css" />
-        <!-- Revolution Slider -->
-        <link rel="stylesheet" href="assets/vendor/slider-revolution/css/settings.css">
-        <link rel="stylesheet" href="assets/vendor/slider-revolution/css/layers.css">
-        <link rel="stylesheet" href="assets/vendor/slider-revolution/css/navigation.css">
-        <!-- Bootstrap Sweetalert -->
-        <link rel="stylesheet" href="assets/vendor/bootstrap-sweetalert/dist/sweetalert.css" />
-        <!-- Social Likes -->
-        <link rel="stylesheet" href="assets/vendor/social-likes/dist/social-likes_flat.css" />
-        <!-- FontAwesome -->
-        <script defer src="assets/vendor/fontawesome-free/js/all.js"></script>
-        <script defer src="assets/vendor/fontawesome-free/js/v4-shims.js"></script>
-        <!-- Youplay -->
-        <link rel="stylesheet" href="assets/css/youplay-light.min.css">
-        <!-- RTL (uncomment this to enable RTL support) -->
-        <!-- <link rel="stylesheet" href="assets/css/youplay-rtl.min.css" /> -->
-        <!-- Custom Styles -->
-        <link rel="stylesheet" href="assets/css/custom.css">
-        <!-- END: Styles -->
-        <!-- jQuery -->
-        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ticketier</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="assets/images/dark/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- START: Styles -->
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/dist/magnific-popup.css" />
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="assets/vendor/slider-revolution/css/settings.css">
+    <link rel="stylesheet" href="assets/vendor/slider-revolution/css/layers.css">
+    <link rel="stylesheet" href="assets/vendor/slider-revolution/css/navigation.css">
+    <!-- Bootstrap Sweetalert -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-sweetalert/dist/sweetalert.css" />
+    <!-- Social Likes -->
+    <link rel="stylesheet" href="assets/vendor/social-likes/dist/social-likes_flat.css" />
+    <!-- FontAwesome -->
+    <script defer src="assets/vendor/fontawesome-free/js/all.js"></script>
+    <script defer src="assets/vendor/fontawesome-free/js/v4-shims.js"></script>
+    <!-- Youplay -->
+    <link rel="stylesheet" href="assets/css/youplay-light.css">
+    <!-- RTL (uncomment this to enable RTL support) -->
+    <!-- <link rel="stylesheet" href="assets/css/youplay-rtl.min.css" /> -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- END: Styles -->
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+</head>
     <body>
         <!-- Preloader -->
-        <!-- <div class="page-preloader preloader-wrapp"> -->
-        <!--     <img src="assets/images/light/logo.png" alt=""> -->
-        <!--     <div class="preloader"></div> -->
-        <!-- </div> -->
+        <div class="page-preloader preloader-wrapp">
+            <img src="assets/images/ticketier.png" alt="">
+            <div class="preloader"></div>
+        </div>
         <!-- /Preloader -->
         <!-- Navbar -->
         <nav class="navbar-youplay navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/light/logo.png" alt="">
-                    </a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class=" dropdown dropdown-hover">
-                            <a href="light-store-1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Store <span class="caret"></span>
-                                <span class="label">games</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <ul role="menu">
-                                    <li>
-                                        <a href="light-store-1.html"> Store Style 1 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-store-2.html"> Store Style 2 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-cart.html"> Cart </a>
-                                    </li>
-                                </ul>
-                                <ul role="menu">
-                                    <li>
-                                        <a href="light-store-product-1.html"> Product Style 1 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-store-product-2.html"> Product Style 2 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-checkout.html"> Checkout </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=" dropdown dropdown-hover">
-                            <a href="light-blog-1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Blog <span class="caret"></span>
-                                <span class="label">news</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <ul role="menu">
-                                    <li>
-                                        <a href="light-blog-1.html"> Blog Style 1 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-blog-2.html"> Blog Style 2 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-blog-3.html"> Blog Style 3 </a>
-                                    </li>
-                                </ul>
-                                <ul role="menu">
-                                    <li>
-                                        <a href="light-blog-post-1.html"> Blog Post 1 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-blog-post-2.html"> Blog Post 2 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-blog-post-3.html"> Blog Post 3 </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=" dropdown dropdown-hover">
-                            <a href="light-components.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Features <span class="caret"></span>
-                                <span class="label">full list</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <ul role="menu">
-                                    <li>
-                                        <a href="light-forums.html"> Forums </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-forums-topics.html"> Forums Topics </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-forums-single-topic.html"> Forums Single Topic </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-matches-list.html"> Matches List </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-match.html"> Match </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-match-2.html"> Match with Maps </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-login.html"> Login </a>
-                                    </li>
-                                </ul>
-                                <ul role="menu">
-                                    <li>
-                                        <a href="light-widgets.html"> Widgets <span class="badge bg-default">New</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-components.html"> Components </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-coming-soon.html"> Coming Soon </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-contact.html"> Contact Us </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-search.html"> Search </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-404.html"> 404 </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-blank.html"> Blank </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active dropdown dropdown-hover">
-                            <a href="light-user-activity.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> KuroKy <span class="badge bg-default">8</span>
-                                <span class="caret"></span>
-                                <span class="label">user</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <ul role="menu">
-                                    <li class="active">
-                                        <a href="light-user-activity.html"> Activity </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-user-profile.html"> Profile </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-user-messages.html"> Messages <span class="badge bg-default">8</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-user-messages-compose.html"> Messages Compose </a>
-                                    </li>
-                                    <li>
-                                        <a href="light-user-settings.html"> Settings </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://nkdev.info/docs/youplay-html/"> Documentation </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://1.envato.market/youplayhtmlinfo"> Purchase </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="search-toggle" href="search.html">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <li class="dropdown dropdown-hover dropdown-cart">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                <i class="fa fa-shopping-cart"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <div class="row youplay-side-news">
-                                    <div class="col-xs-3 col-md-4">
-                                        <a href="#" class="angled-img">
-                                            <div class="img">
-                                                <img src="assets/images/light/game-journey-500x375.jpg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-9 col-md-8">
-                                        <a href="#" class="pull-right mr-10"><i class="fa fa-times"></i></a>
-                                        <h4 class="ellipsis"><a href="#">Journey</a></h4>
-                                        <span class="quantity">1 × <span class="amount">$50.00</span></span>
-                                    </div>
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">
+                      <img src="assets/images/ticketier.png" alt="">
+                  </a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li class=" dropdown dropdown-hover">
+                          <a href="store-1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tournaments<span class="caret"></span>
+                              <span class="label">games</span>
+                          </a>
+                          <div class="dropdown-menu">
+                              <ul role="menu">
+                                  <li>
+                                      <a href="store-1.html"> Local Cup</a>
+                                  </li>
+                                  <li>
+                                      <a href="store-2.html"> Kenya Federation League</a>
+                                  </li>
+                                  <li>
+                                      <a href="cart.html"> Kenya Premier League </a>
+                                  </li>
+                              </ul>
+                              <ul role="menu">
+                                  <li>
+                                      <a href="store-product-1.html">Juniour Leagues</a>
+                                  </li>
+                                  <li>
+                                      <a href="store-product-2.html"> Women's Leagie</a>
+                                  </li>
+                                  <li>
+                                      <a href="checkout.html"> Ongoing Seasons </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="active dropdown dropdown-hover">
+                          <a href="blog-1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events & Categories <span class="caret"></span>
+                              <span class="label">Local Events</span>
+                          </a>
+                          <div class="dropdown-menu">
+                              <ul role="menu">
+                                  <li class="active">
+                                      <a href="blog-1.html">Local Events</a>
+                                  </li>
+                                  <li>
+                                      <a href="blog-2.html"> national Events </a>
+                                  </li>
+                                  <li>
+                                      <a href="blog-3.html"> Sponsored Events</a>
+                                  </li>
+                              </ul>
+                              <ul role="menu">
+                                  <li>
+                                      <a href="blog-post-1.html"> Trending </a>
+                                  </li>
+                                  <li>
+                                      <a href="blog-post-2.html">Business Expo's </a>
+                                  </li>
+                                  <li>
+                                      <a href="blog-post-3.html"> Cultural Events</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class=" dropdown dropdown-hover">
+                          <a href="components.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Features <span class="caret"></span>
+                              <span class="label">full list</span>
+                          </a>
+                          <div class="dropdown-menu">
+                              <ul role="menu">
+                              
+                                  <li>
+                                      <a href="matches-list.html"> Matches List </a>
+                                  </li>
+                                  <li>
+                                      <a href="match.html"> Match </a>
+                                  </li>
+                                  
+                                  </li>
+                              </ul>
+                              <ul role="menu">
+                                  <li>
+                                      <a href="widgets.html"> Widgets <span class="badge bg-default">New</span>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="components.html"> Components </a>
+                                  </li>
+                                  <li>
+                                      <a href="coming-soon.html"> Coming Soon </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class=" dropdown dropdown-hover">
+                          <a href="user-activity.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> KuroKy <span class="badge bg-default">8</span>
+                              <span class="caret"></span>
+                              <span class="label">user</span>
+                          </a>
+                          <div class="dropdown-menu">
+                              <ul role="menu">
+                                  <li>
+                                      <a href="user-activity.html"> Activity </a>
+                                  </li>
+                                  <li>
+                                      <a href="user-profile.html"> Profile </a>
+                                  </li>
+                                  <li>
+                                      <a href="user-messages.html"> Messages <span class="badge bg-default">8</span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="search-toggle" href="search.html">
+                              <i class="fa fa-search"></i>
+                          </a>
+                      </li>
+                      <li class="dropdown dropdown-hover dropdown-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                            <i class="fa fa-user-plus"></i>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu admin-drop down menu">
+                            <form class="navbar-login-form" action="#" method="post">
+                                <p>Username:</p>
+                                <div class="youplay-input">
+                                    <input type="text" name="log">
                                 </div>
-                                <div class="row youplay-side-news">
-                                    <div class="col-xs-3 col-md-4">
-                                        <a href="#" class="angled-img">
-                                            <div class="img">
-                                                <img src="assets/images/light/game-road-no-taken-500x375.jpg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-9 col-md-8">
-                                        <a href="#" class="pull-right mr-10"><i class="fa fa-times"></i></a>
-                                        <h4 class="ellipsis"><a href="#">Road Not Taken</a></h4>
-                                        <span class="quantity">1 × <span class="amount">$20.00</span></span>
-                                    </div>
+                                <p>Password:</p>
+                                <div class="youplay-input">
+                                    <input type="password" name="pwd">
                                 </div>
-                                <div class="ml-20 mr-20 pull-right"><strong>Subtotal:</strong> <span class="amount">$70.00</span></div>
-                                <div class="btn-group pull-right m-15">
-                                    <a href="#" class="btn btn-default btn-sm">View Cart</a>
-                                    <a href="#" class="btn btn-default btn-sm">Checkout</a>
+                                <div class="youplay-checkbox mb-15 ml-5">
+                                    <input type="checkbox" name="rememberme" value="forever" id="nav-rememberme">
+                                    <label for="nav-rememberme">Remember Me</label>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="dropdown dropdown-hover dropdown-user">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-                                <i class="fa fa-user"></i>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <form class="navbar-login-form" action="#" method="post">
-                                    <p>Username:</p>
-                                    <div class="youplay-input">
-                                        <input type="text" name="log">
-                                    </div>
-                                    <p>Password:</p>
-                                    <div class="youplay-input">
-                                        <input type="password" name="pwd">
-                                    </div>
-                                    <div class="youplay-checkbox mb-15 ml-5">
-                                        <input type="checkbox" name="rememberme" value="forever" id="nav-rememberme">
-                                        <label for="nav-rememberme">Remember Me</label>
-                                    </div>
-                                    <button class="btn btn-sm ml-0 mr-0" name="submit">Log In</button>
-                                    <br>
-                                    <p>
-                                        <a class="no-fade" href="#">Lost password?</a> | <a href="#" class="no-fade" data-toggle="modal" data-target="#nav-registration">Register</a>
-                                    </p>
-                                </form>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                                <button class="btn btn-sm ml-0 mr-0" name="submit">Log In</button>
+                                <br>
+                                <p>
+                                    <a class="no-fade" href="#">Lost password?</a> | <a href="#" class="no-fade" data-toggle="modal" data-target="#nav-registration">Register</a>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+                      <li class="dropdown dropdown-hover dropdown-user">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                              <i class="fa fa-user"></i>
+                              <span class="caret"></span>
+                          </a>
+                          <div class="dropdown-menu">
+                              <form class="navbar-login-form" action="#" method="post">
+                                  <p>Username:</p>
+                                  <div class="youplay-input">
+                                      <input type="text" name="log">
+                                  </div>
+                                  <p>Password:</p>
+                                  <div class="youplay-input">
+                                      <input type="password" name="pwd">
+                                  </div>
+                                  <div class="youplay-checkbox mb-15 ml-5">
+                                      <input type="checkbox" name="rememberme" value="forever" id="nav-rememberme">
+                                      <label for="nav-rememberme">Remember Me</label>
+                                  </div>
+                                  <button class="btn btn-sm ml-0 mr-0" name="submit">Log In</button>
+                                  <br>
+                                  <p>
+                                      <a class="no-fade" href="#">Lost password?</a> | <a href="#" class="no-fade" data-toggle="modal" data-target="#nav-registration">Register</a>
+                                  </p>
+                              </form>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
         </nav>
         <!-- /Navbar -->
         <!-- Registration Form -->
@@ -337,17 +279,15 @@
 -->
             <section class="youplay-banner banner-top youplay-banner-parallax small">
                 <div class="image" data-speed="0.4">
-                    <img src="assets/images/light/game-journey-1400x460.jpg" alt="" class="jarallax-img">
+                    <img src="assets/images/banner.png" alt="" class="jarallax-img">
                 </div>
                 <div class="youplay-user-navigation">
                     <div class="container">
                         <ul>
-                            <li class="active"><a href="light-user-activity.html">Activity</a></li>
-                            <li><a href="light-user-profile.html">Profile</a></li>
-                            <li><a href="light-user-messages.html">Messages <span class="badge">6</span></a></li>
-                            <li><a href="light-user-settings.html">Settings</a></li>
-                            <li><a href="#">Groups</a></li>
-                            <li><a href="#">Forums</a></li>
+                            <li class="active"><a href="">Activity</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Store <span class="badge">6</span></a></li>
+                            <li><a href="#">Settings</a></li>
                         </ul>
                     </div>
                 </div>
@@ -361,12 +301,12 @@
                                 <i class="fa fa-search-plus icon"></i>
                             </a>
                             <div class="user-data">
-                                <h2>KuroKy</h2>
-                                <div class="location"><i class="fa fa-map-marker"></i> Los Angeles</div>
+                                <h2>KuroKy<span class="badge">Admin</span></h2>
+                                <div class="location"><i class="fa fa-user"></i> Clerk </div>
                                 <div class="activity">
                                     <div>
                                         <div class="num">69</div>
-                                        <div class="title">Posts</div>
+                                        <div class="title">Tickets</div>
                                     </div>
                                     <div>
                                         <div class="num">12</div>
@@ -374,14 +314,14 @@
                                     </div>
                                     <div>
                                         <div class="num">689</div>
-                                        <div class="title">Followers</div>
+                                        <div class="title">Fan Points</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="container mt-20">
-                            <a href="#" class="btn btn-sm btn-default ml-0">Add Friend</a>
-                            <a href="#" class="btn btn-sm btn-default">Private Message</a>
+                            <a href="#" class="btn btn-sm btn-default ml-0">Store</a>
+                            <a href="#" class="btn btn-sm btn-default">Tickets</a>
                         </div>
                     </div>
                 </div>
@@ -402,11 +342,9 @@
                                 <!-- /icon -->
                                 <!-- content -->
                                 <div class="youplay-timeline-content">
-                                    <h3 class="mb-0">Notification</h3>
+                                    <h3 class="mb-0">You Have Just bought 1 Regular Ticket(s) to 3kFC vs Naivas FC</h3>
                                     <span class="youplay-timeline-date pt-0">20 minutes ago</span>
-                                    <p>We invite you to test-drive the new service <a href="#">Lorem</a>. Confirm the invitation and we will send you notes and hints.</p>
-                                    <a href="#" class="btn">Confirm</a>
-                                    <a href="#">Cancel</a>
+                                    Comfirmed you have bought 1 regulart ticket at 100 /= KSH
                                 </div>
                                 <!-- content -->
                             </div>
@@ -415,7 +353,7 @@
                             <div class="youplay-timeline-block">
                                 <!-- icon -->
                                 <div class="youplay-timeline-icon bg-primary">
-                                    <img src="assets/images/light/avatar-user-2.png" alt="John Doe" title="John Doe">
+                                    <img src="#" alt="#" title="#">
                                 </div>
                                 <!-- /icon -->
                                 <!-- content -->
